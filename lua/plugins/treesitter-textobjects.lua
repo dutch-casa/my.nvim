@@ -1,10 +1,11 @@
 return {
-  "nvim-treesitter/nvim-treesitter-textobjects",
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
-  event = "VeryLazy",
-  opts = {},
-  config = function()
-    require("nvim-treesitter.configs").setup({
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    event = "VeryLazy",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
       textobjects = {
         select = {
           enable = true,
@@ -42,6 +43,6 @@ return {
           swap_previous = { ["<leader>A"] = "@parameter.inner" },
         },
       },
-    })
-  end,
+    },
+  },
 }
