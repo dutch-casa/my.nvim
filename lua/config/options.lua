@@ -6,7 +6,7 @@ vim.cmd("highlight! link ColorColumn CursorLine")
 vim.opt.termguicolors = true
 
 -- Inlay hints on by default (type annotations inline)
-vim.g.lazyvim_inlay_hints = true
+vim.g.lazyvim_inlay_hints = false
 
 -- Persistent undo across sessions
 vim.opt.undofile = true
