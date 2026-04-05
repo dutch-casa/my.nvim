@@ -3,6 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
+      spelling = { enabled = false },
       diagnostics = {
         underline = true,
         virtual_text = {

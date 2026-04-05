@@ -3,8 +3,8 @@ return {
   event = "InsertEnter",
   config = function()
     require("better_escape").setup({
-      timeout = 200, -- Time in ms to wait for the next key
-      default_mappings = true, -- Automatically enables jk, kj, etc.
+      timeout = 150,
+      default_mappings = false,
       mappings = {
         i = {
           j = {

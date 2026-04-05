@@ -1,8 +1,10 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 
+-- Disable format-on-save (manual format: <leader>cf)
+vim.g.autoformat = false
+
 vim.opt.colorcolumn = "80"
-vim.cmd("highlight! link ColorColumn CursorLine")
 vim.opt.termguicolors = true
 
 -- Inlay hints on by default (type annotations inline)
