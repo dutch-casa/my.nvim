@@ -5,9 +5,11 @@
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
     vim.api.nvim_set_hl(0, "ColorColumn", { link = "CursorLine" })
+    vim.api.nvim_set_hl(0, "Cursor", { fg = "#000000", bg = "#FF8000" })
   end,
 })
 vim.api.nvim_set_hl(0, "ColorColumn", { link = "CursorLine" })
+vim.api.nvim_set_hl(0, "Cursor", { fg = "#000000", bg = "#FF8000" })
 
 -- Strip trailing whitespace on save
 vim.api.nvim_create_autocmd("BufWritePre", {

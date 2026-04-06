@@ -17,3 +17,6 @@ vim.opt.undolevels = 10000
 -- Scroll context — never lose where you are
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
+
+-- Bright orange cursor
+vim.opt.guicursor = "n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"
